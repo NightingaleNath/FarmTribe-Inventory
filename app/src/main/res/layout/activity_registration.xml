@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.RegistrationActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:transitionName="logo_image"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="Welcome,"
+            android:transitionName="logo_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/logo_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hb"
+            android:transitionName="logo_slogan"
+            android:text="Sign Up to start using this app"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Full Name"
+                app:hintTextColor="#000"
+                app:boxStrokeColor="#000"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="#000"
+                app:endIconMode="clear_text"
+                app:endIconTint="#000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli"
+                    android:textColor="#000"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/staffId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Staff ID"
+                app:hintTextColor="#000"
+                app:boxStrokeColor="#000"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="#000"
+                android:transitionName="logo_staff"
+                app:endIconMode="clear_text"
+                app:endIconTint="#000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli"
+                    android:textColor="#000"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Password"
+                app:hintTextColor="#000"
+                app:boxStrokeColor="#000"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="#000"
+                android:transitionName="logo_pass"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli"
+                    android:textColor="#000"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_Signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="Create Account"
+                android:transitionName="logo_go"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <Button
+                android:id="@+id/already_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account? Login"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:transitionName="logo_new"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

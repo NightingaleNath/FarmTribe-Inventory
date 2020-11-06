@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ideanity.oceans.farmertribe">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoadProduct"/>
+        <activity android:name=".activity.StoreActivity" />
+        <activity android:name=".activity.IndividualRecordsActivity" />
+        <activity android:name=".activity.ViewAttendanceActivity" />
+        <activity android:name=".activity.PosActivity" />
+        <activity android:name=".activity.StockInListActivity" />
+        <activity android:name=".activity.StockInActivity" />
+        <activity android:name=".activity.ProductListActivity" />
+        <activity android:name=".activity.ProductActivity" />
+        <activity android:name=".activity.TrainSetupActivity" />
+        <activity android:name=".activity.TrainSetupListActivity" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.AttendanceActivity" />
+        <activity android:name=".activity.BrandListActivity" />
+        <activity android:name=".activity.MemberActivity" />
+        <activity android:name=".activity.MemberListActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.BrandActivity" />
+        <activity android:name=".activity.BrandUpdateActivity" />
+        <activity android:name=".activity.RegistrationActivity" />
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>

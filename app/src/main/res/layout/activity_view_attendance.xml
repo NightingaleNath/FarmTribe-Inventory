@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_attend_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/individual_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person"
+                android:padding="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Records"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/hb"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/fab"
+                android:layout_toStartOf="@+id/fab"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:fontFamily="@font/hb"
+                android:text="Click here to Pick Date"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_below="@+id/editText"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/attend_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+                </ListView>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="@color/colorAccent"
+                android:visibility="invisible"
+                app:borderWidth="0dp" />
+
+            <Button
+                android:id="@+id/buttonFind"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/editText"
+                android:background="#00000000"
+                android:layout_alignEnd="@+id/fab"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/fab"
+                android:textColor="@color/colorAccent"
+                android:text="Load" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

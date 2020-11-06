@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:scrollbars="none"
+    android:background="#fff"
+    tools:context=".activity.BrandActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/back_brand"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New\nBrand"
+            android:textSize="40sp"
+            android:fontFamily="@font/bungee"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/brandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Brand Name"
+                app:hintTextColor="#000"
+                app:boxStrokeColor="#000"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                android:transitionName="logo_staff"
+                app:endIconTint="#000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:textColor="#000"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="Save Brand"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_brand_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="Update Brand"
+            android:layout_marginTop="-55dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_id"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>
